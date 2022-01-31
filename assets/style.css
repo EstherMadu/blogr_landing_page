@@ -6,6 +6,7 @@
 
 .navbar {
   position: absolute;
+  
 }
 
 .btn-link {
@@ -27,7 +28,8 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-  min-height: 70vh;
+  height: auto;
+  /* min-height: 70vh; */
   background: linear-gradient(to right, #fe8c71, #ff4457);
 }
 
@@ -57,11 +59,21 @@
   color: white;
   border: 0.5px solid white;
   border-radius: 24px;
-  width: 120px;
+  width: 140px;
+}
+
+.hero span {
+  margin-top: 30px;
+  
+}
+@media screen and (max-width: 460px) {
+  .hero span{
+    margin: 0 auto;
+  }
+  
 }
 
 /* Second session */
-
 .heading-color {
   color: rgb(58, 75, 91);
 }
@@ -133,7 +145,7 @@
   padding-top: 3rem;
 }
 
-.section-4 .laptop-pattern-mobile {
+.section-4 .laptop-pattern-2 {
   display: none;
 }
 
@@ -148,6 +160,19 @@
     padding: 10rem 0 0;
   }
   .section-2 .image2 {
+    display: block;
+    width: 100%;
+  }
+
+  .section-4{
+    padding: 4rem 1rem; 
+  }
+  .section-4 .laptop-pattern{
+    display: none;
+    padding: 5rem 0 0 0;
+  }
+
+  .section-4 .laptop-pattern-2{
     display: block;
     width: 100%;
   }
@@ -169,3 +194,16 @@
     background-size: 100%;
   }
 }
+
+/* Footer */
+footer{
+  background-color: hsl(238, 16%, 31%);
+  border-radius: 0px 100px 0px 0px;
+  
+  
+}
+footer ul{
+  list-style-type: none;
+ 
+}
+
