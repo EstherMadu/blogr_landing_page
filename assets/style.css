@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+body{
+  font-size: 16px;
+}
+
 .container {
   max-width: 1000px;
 }
@@ -5,21 +15,30 @@
 /* Navbar */
 
 .navbar {
-  position: absolute;
-  
+  position: absolute; 
 }
 
 .btn-link {
   background-color: white;
-  color: black;
+  color: #ff4457;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   text-decoration: none;
   border-radius: 24px;
-  width: 100px;
+  width: 100px;  
+}
+
+.btn-link:hover{
+  background-color: hsl(0, 0%, 100%, 0.42);
+  color: #fe8c71;
 }
 
 .navbar-nav > li {
   margin: 0 20px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
 }
+
 
 /* Showcase Area */
 
@@ -29,13 +48,23 @@
   width: 100%;
   position: relative;
   height: auto;
-  /* min-height: 70vh; */
+  min-height: 70vh;
   background: linear-gradient(to right, #fe8c71, #ff4457);
 }
 
 .hero * {
   z-index: 2;
   position: relative;
+}
+
+.hero .container h1{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+}
+
+.hero .container p{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
 }
 
 .header-bg {
@@ -47,7 +76,6 @@
 }
 
 /* Styling Showcase button */
-
 .btn-light {
   border-radius: 24px;
   color: hsl(355, 100%, 74%);
@@ -62,6 +90,10 @@
   width: 140px;
 }
 
+.btn-info:hover{
+  background-color: white;
+}
+
 .hero span {
   margin-top: 30px;
   
@@ -69,13 +101,14 @@
 @media screen and (max-width: 460px) {
   .hero span{
     margin: 0 auto;
-  }
-  
+  } 
 }
 
 /* Second session */
-.heading-color {
+.heading {
   color: rgb(58, 75, 91);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
 }
 
 .section-2 {
@@ -104,9 +137,9 @@
 
 .section-3 {
   position: relative;
-  background-color: hsl(238, 16%, 31%);
+  background-color: hsl(237, 23%, 32%);
   min-height: 400px;
-  border-radius: 0px 160px 0px 160px;
+  border-radius: 0px 50px 0px 50px;
   background-image: url(/images/bg-pattern.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -197,12 +230,17 @@
 
 /* Footer */
 footer{
-  background-color: hsl(238, 16%, 31%);
-  border-radius: 0px 100px 0px 0px;
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0px 50px 0px 0px;
 }
 
 footer ul{
   list-style-type: none;
 }
 
-
+@media screen and (max-width: 600px) {
+  footer .conatainer{
+    padding: 10rem 0;
+  }
+  
+}
